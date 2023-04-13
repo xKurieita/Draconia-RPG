@@ -1,6 +1,7 @@
 //Main game container, handles game logic and rendering
 
 import React, { useState, useEffect } from 'react';
+import Layout from '../Layout';
 
 const Game = () => {
 
@@ -28,7 +29,7 @@ const Game = () => {
 
     return (
         <div id='game-container'>
-            
+            <Layout />
         </div>
     );
 
