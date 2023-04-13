@@ -4,13 +4,13 @@ const Map = () => {
     return <div id="map-container">
         <div id="map" style={{
             margin: '0 auto',
-            width: '1200px',
-            height: '800px',
+            width: '100vw',
+            height: '100vh',
             backgroundColor: 'black',
-            border: '4px solid white',
+            border: '15px ridge rgb(50, 150,150)',
         }}>
         </div>
     </div>;
-    };
+};
 
 export default Map;
