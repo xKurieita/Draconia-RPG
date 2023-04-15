@@ -3,7 +3,10 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '../Layout';
 
-const Game = () => {
+const Game: React.FC = () => {
+    // Game state
+    const [gameState, setGameState] = useState<string>('start'); // 'start', 'playing', 'gameover, 'menu' , 'battle', 'pause'
+    
 
     // Game update logic
     const updateGame = () => {
