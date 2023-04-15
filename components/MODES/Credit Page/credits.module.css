@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.main {
+    background: black;
+    color: white;
+    font-family: 'VT323', monospace;
+    height: 100vh;
+    text-align: center;
+    border: 15px ridge rgb(130, 100, 220);
+}
+
+.title {
+    color: rgb(130, 100, 220);
+}
+
+.normalText {
+    font-size: 2em;
+    height: 15px;
+}
+
+.return {
+    font-size: 4em;
+    width: 300px;
+    margin: auto;
+}
+
+.return:hover {
+    color: rgb(130, 100, 220);
+    cursor: pointer;
+    animation: 3s Bounce infinite;
+}
+
+@keyframes Bounce {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(-2px);
+    }
+
+    75% {
+        transform: translateY(2px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

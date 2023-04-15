@@ -1,1 +1,0 @@
-// Component for disokaying game settings UI

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.main {
+    background: black;
+    color: white;
+    font-family: 'VT323', monospace;
+    height: 100vh;
+    text-align: center;
+    border: 15px ridge rgb(130, 100, 220);
+}
+
+.title {
+    color: rgb(130, 100, 220);
+}
+
+.settingsHolder {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    margin: auto;
+    font-size: 1.5em;
+
+}
+
+.settingsHolder h3 {
+    justify-self: left;
+    white-space: nowrap;
+}
+
+/* style={{ background: "blue", height: "50px", display: "flex", justifyContent: "center", gap: "15px" }} */
+
+.settingsChanger {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.settingsChanger button {
+    all: unset;
+    font-size: 1.3em;
+    height: 25px;
+}
+
+.settingsChanger button:hover {
+    color: rgb(130, 100, 220);
+}
+
+/*                               */
+.return {
+    font-size: 4em;
+    width: 300px;
+    margin: auto;
+}
+
+.return:hover {
+    color: rgb(130, 100, 220);
+    cursor: pointer;
+    animation: 3s Bounce infinite;
+}
+
+@keyframes Bounce {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(-2px);
+    }
+
+    75% {
+        transform: translateY(2px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

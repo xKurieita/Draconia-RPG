@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.background {
+    background: black;
+    display: flex;
+    border: 15px ridge rgb(130, 100, 220);
+    padding-left: 30px;
+}
+
+.castle {
+    width: 100%;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9e40e33-f5aa-4cd6-a20f-98e9cd87c211/dcqmy6d-e8ac7a51-e400-4ed3-9e69-6b0d20abf53d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y5ZTQwZTMzLWY1YWEtNGNkNi1hMjBmLTk4ZTljZDg3YzIxMVwvZGNxbXk2ZC1lOGFjN2E1MS1lNDAwLTRlZDMtOWU2OS02YjBkMjBhYmY1M2QucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.HaMu5ZXwjPKkB8N5-LQke3nyQ9TLNHqEV5MeU1G_eno);
+    background-repeat: no-repeat;
+    background-size: contain;
+    image-rendering: pixelated;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+    height: 96.9vh;
+    gap: 3%;
+    color: white;
+}
+
+.title {
+    font-family: 'VT323', monospace;
+    font-size: 10em;
+
+}
+
+.subtitle {
+    font-family: 'VT323', monospace;
+    font-size: 2em;
+}
+
+@keyframes Bounce {
+    0% {
+        transform: translateY(0px) scale(1.03);
+    }
+
+    25% {
+        transform: translateY(-2px) scale(1.03);
+    }
+
+    75% {
+        transform: translateY(2px) scale(1.03);
+    }
+
+    100% {
+        transform: translateY(0px) scale(1.03);
+    }
+}
+
+.options {
+
+    font-family: 'VT323', monospace;
+    font-size: 4em;
+}
+
+.options:hover::before {
+    content: '> ';
+}
+
+.options:hover {
+    color: rgb(130, 100, 220);
+    cursor: pointer;
+    animation: 3s Bounce infinite;
+}
+
+.credits {
+    font-family: 'VT323', monospace;
+    font-size: .75em;
+    color: rgba(156, 156, 156);
+    padding-bottom: 15px;
+}
+
+.githubLink,
+.companyLink {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.githubLink:hover {
+    color: blue;
+}
+
+.companyLink:hover {
+    color: green;
+}
+
+.githubLink:visited,
+.companyLink:visited {
+    color: white;
+}
