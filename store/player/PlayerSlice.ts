@@ -1,6 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { PlayerState, Character, Ability, Gear, StatusEffect, InventoryItem } from './PlayerState';
-import { stringify } from 'querystring';
 
 // Define the initial state for the player slice
 const initialState: PlayerState = {
